@@ -19,7 +19,6 @@
     background-color: black;
     width: 200px;
     height: 600px;
-    z-index:1;
 }
 
 .rojo{
@@ -28,8 +27,7 @@
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    background: red;
-    z-index: 5;
+    background-color: rgb(133, 1, 1);
 
 }
 .rojobrillante{
@@ -38,8 +36,8 @@
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    background: red;
-    z-index: 5;
+    background-color: rgb(252, 0, 0);
+    box-shadow: 0 0 150px rgb(255, 0, 0);
 
 }
 .naranja{
@@ -48,8 +46,7 @@
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    background:orange;
-    z-index: 5;
+    background:rgb(171, 112, 1);
 }
 .naranjabrillante{
     width: 180px;
@@ -57,8 +54,8 @@
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    background:orange;
-    z-index: 5;
+    background:rgb(251, 235, 0);
+    box-shadow: 0 0 150px rgb(242, 255, 0);
 }
 .verde{
     width: 180px;
@@ -66,9 +63,9 @@
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    background: green;
-    z-index: 5;
-    box-shadow: 0 0 75px #4f9;
+    background: rgb(0, 124, 0);
+
+
 }
 .verdebrillante{
     width: 180px;
@@ -76,7 +73,6 @@
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    background: green;
-    z-index: 5;
-    box-shadow: 0 0 75px #4f9;
+    background: rgb(0, 252, 0);
+    box-shadow: 0 0 150px rgb(0, 255, 0);
 }

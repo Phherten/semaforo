@@ -7,24 +7,41 @@ import rigoImage from "../../img/rigo-baby.jpg";
 //const [luz, setLuz] = useState("");
 
 const Home = () => {
-	const [luz, setLuz] = (useState = "");
+	const [luz, setLuz] = useState("");
 	return (
 		<div className="container d-flex-column align-items-center mt-5 ">
 			<div className="semaforo d-flex-column">
 				<div
-					onClick={setLuz("rojo")}
 					className={
 						luz == "rojo"
-							? "rojo m-2 pt-2" 
-							: "rojobrillante m-2 pt-2"
-					}></div>
-				<div className="naranja m-2"></div>
-				<div className="verde m-2"></div>
+							? "rojobrillante m-2 pt-2"
+							: "rojo m-2 pt-2"
+					}
+					onClick={() => {
+						setLuz("rojo");
+					}}></div>
+
+				<div
+					className={
+						luz == "naranja"
+							? "naranjabrillante m-2 pt-2"
+							: "naranja m-2 pt-2"
+					}
+					onClick={() => {
+						setLuz("naranja");
+					}}></div>
+				<div
+					className={
+						luz == "verde"
+							? "verdebrillante m-2 pt-2"
+							: "verde m-2 pt-2"
+					}
+					onClick={() => {
+						setLuz("verde");
+					}}></div>
 			</div>
 			<div className="row">
-				<div className="palo bg-black">
-					<p></p>
-				</div>
+				<div className="palo bg-black"></div>
 			</div>
 		</div>
 	);
